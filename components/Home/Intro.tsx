@@ -1,15 +1,23 @@
 import Image from "next/image";
 import { FC } from "react";
 import IntroGif from "../../public/images/intro.gif";
+import IntroLoading from "../../public/images/intro.jpg";
 
 const Intro: FC = () => {
   return (
     <div className="relative flex justify-center items-center h-72 md:h-96">
-      <div className="w-screen absolute top-0">
+      <div className="w-screen absolute top-0 z-30">
         <Image
           className="w-screen max-w-5xl mx-auto h-72 md:h-96 object-cover"
           src={IntroGif}
           alt="Intro"
+        />
+      </div>
+      <div className="w-screen absolute top-0 z-20">
+        <Image
+          className="w-screen max-w-5xl mx-auto h-72 md:h-96 object-cover"
+          src={IntroLoading}
+          alt="IntroLoading"
         />
       </div>
       <h1 className="text-lg md:text-3xl z-30 bg-gray-300 bg-opacity-50 px-4 py-2 md:px-8 md:py-4 rounded-lg">
