@@ -3,6 +3,7 @@
 res
 sw*
 workbox*
+contracts
 
 # dependencies
 /node_modules
